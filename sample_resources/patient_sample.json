@@ -1,0 +1,39 @@
+{
+    "resourceType": "Patient",
+    "meta": {
+        "tag": [
+            {
+                "system": "https://d-tree.org",
+                "code": "newly-diagnosed-client",
+                "display": "Newly Diagnosed Client"
+            },
+            {
+                "system": "https://d-tree.org",
+                "code": "exposed-infant",
+                "display": "Exposed Infant"
+            }
+        ]
+    },
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Abdul <b>NEWSEVEN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td/></tr><tr><td>Date of birth</td><td><span>03 August 2022</span></td></tr></tbody></table></div>"
+    },
+    "active": true,
+    "name": [
+        {
+            "family": "NewSeven",
+            "given": [
+                "AbdulUpdated"
+            ]
+        }
+    ],
+    "gender": "male",
+    "birthDate": "2022-08-03",
+    "address": [
+        {
+            "use": "home",
+            "type": "physical",
+            "district": "Chiradzulu"
+        }
+    ]
+}
