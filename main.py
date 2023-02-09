@@ -89,6 +89,6 @@ def delete_all_locations():
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    delete_all_locations()
+    post_location_to_server()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
