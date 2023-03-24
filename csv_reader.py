@@ -4,7 +4,7 @@ from collections import defaultdict
 
 def read_csv_file():
     my_dict = defaultdict(list)
-    csv_file_path = 'sample_resources/Makiyoni Health Center.csv'
+    csv_file_path = 'sample_resources/Khombedza Health Centre.csv'
     with open(csv_file_path, mode='r') as infile:
         csv_reader = csv.DictReader(infile)
         for line in csv_reader:

@@ -8,6 +8,10 @@ import constants
 import fhirclient.models.identifier as location_identifier
 import uuid
 
+local_installation_url = 'http://192.168.100.4:8085/fhir'
+staging_url = 'https://fhir-mwcore-staging.d-tree.org/fhir'
+dev_url = 'https://fhir-dev.d-tree.org/fhir'
+
 
 def post_location_to_server():
     # Use a breakpoint in the code line below to debug your script.
@@ -26,7 +30,7 @@ def post_location_to_server():
     for catchment in location_list:
         catchment_json = json.dumps(catchment)
         response = requests.post(
-            url=f'http://192.168.100.4:8085/fhir/Location/',
+            url=f'{dev_url}/Location/',
             data=catchment_json,
             headers=headers
         )
@@ -50,7 +54,7 @@ def create_root_location():
     headers = fhir_server.post_header()
     root_location_json = json.dumps(root_location.as_json())
     response = requests.post(
-        url=f'http://192.168.100.4:8085/fhir/Location/',
+        url=f'{staging_url}/Location/',
         data=root_location_json,
         headers=headers
     )
